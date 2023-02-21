@@ -1,0 +1,83 @@
+        /*去默认格式*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+body{
+    background-color: #f3f5f7;
+}
+.wrapper{
+   width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    height: 42px;
+    /*background-color: pink;*/
+    margin: 30px auto;
+}
+
+          /*前三个字*/
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+.nav li{
+    float: left;
+    margin-right: 26px;
+}
+.nav li a{
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    /*border-bottom: 2px solid #00a4ff;*/
+    font-size: 18px;
+    color: #050505;
+}
+          /*鼠标移动效果*/
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+        /*搜索*/
+.search{
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+.search input{
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+}
+        /*控制关键字*/
+.search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+}
+.search button{
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-image: url("../img/btn.png");
+    border: 0;
+}
