@@ -1,0 +1,22 @@
+
+@RestController
+public class UserController {
+    @Autowired
+    private UserDao userDao;
+
+    @GetMapping("/user")
+    public List query(){
+        List<User>list = userDao.selectList(null);
+        System.out.println(list);
+        return list;
+    }
+
+    @PostMapping("/user")
+    public String save()
+    {
+//        int i = userDao.insert(user);
+//        System.out.println(user);
+//
+        return "0";
+    }
+}
